@@ -19,7 +19,7 @@ export function EmojiPicker(): JSX.Element {
       <h1>Emoji Picker</h1>
       <div className={style.labels}>
         <p className={style.label}>Current Emoji: {chosenEmoji}</p>
-        <p className={style.label}>Stored emoji: {storedEmoji} </p>
+        <p className={style.label}>Stored Emojis: {storedEmoji} </p>
       </div>
       <div className={style.emojiContainer}>
           {Emojis.map( function(emoji, index) {
