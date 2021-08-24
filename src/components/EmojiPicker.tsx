@@ -10,7 +10,15 @@ export function EmojiPicker(): JSX.Element {
 
   const handleEmojiSelect= (emoji: string) => {
     setChosenEmoji(emoji)
-    setStoredEmoji(previousValue => [...previousValue.slice(-1), emoji])
+  }
+
+  const handleStoreEmoji = () => {
+    setStoredEmoji(previousValue => [...previousValue.slice(-1), chosenEmoji])
+  }
+
+
+  const handleResetStore = () => {
+    setStoredEmoji([])
   }
 
 
@@ -28,7 +36,8 @@ export function EmojiPicker(): JSX.Element {
       </div>
 
       <hr />
-
+      <button onClick={handleStoreEmoji}>Store Emojis</button>
+      <button onClick={handleResetStore}>Reset stored emojis</button>
     </div>
   );
 }
