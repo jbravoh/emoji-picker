@@ -54,7 +54,7 @@ export function EmojiPicker(): JSX.Element {
         Store Emojis
       </button>
       <button className={style.button} onClick={handleResetStore}>
-        Reset stored emojis
+        RESET stored emojis
       </button>
     </div>
   );
