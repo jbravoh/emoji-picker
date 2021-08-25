@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 * {
-    font-family: "Montserrat"
+  font-family: "Montserrat";
 }
 .container {
   display: flex;
@@ -11,7 +11,6 @@
   align-items: center;
   text-align: center;
 }
-  
 
 .labels {
   display: flex;
@@ -23,6 +22,23 @@
 }
 
 .emojiContainer {
-    align-items: stretch;
+  align-items: stretch;
+}
 
+.emojiButton {
+  width: 30px;
+}
+
+.stored {
+  list-style-type: none;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.stored li {
+  display: inline-block;
+}
+
+.button {
+  margin: 5px;
 }
